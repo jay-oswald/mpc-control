@@ -25,6 +25,7 @@ const router = new VueRouter({
 //Websockets for communicating with server
 var ws;
 var reconnectTimer=0;
+let previous_cuelist = null;
 
 function connectWebsocket() {
 	ws = new WebSocket('ws://'+window.config.websocket_server);
@@ -44,7 +45,20 @@ function connectWebsocket() {
 	
 	ws.onmessage = function(e) {
 		var data = JSON.parse(e.data);
-		console.log(e.data);
+		if(data.cmd === 'getActiveCuelists'){
+			let cuelist = [];
+			data.activeCuelists.forEach((cue) => {
+				cuelist.push(cue.id);
+			});
+			cuelist = JSON.stringify(cuelist);
+			if(cuelist !== previous_cuelist){
+				previous_cuelist = cuelist;
+				console.log(e.data);
+			}
+		}
+		else{
+            console.log(e.data);
+		}
 				
 		//Update cuelists
 		if (data.allCuelists !== undefined) {

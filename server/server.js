@@ -183,7 +183,7 @@ function heartbeat() {
 
 //MxManager Functions
 function mxIsMxRunning() {
-	console.log('>> IsMXRun');
+	//console.log('>> IsMXRun');
 	tnc.send('IsMXRun', {waitfor:'.\r\n'}, function(e,d) {
 		var lines = d.split('\r\n');
 		lines.forEach(function each(line) {
@@ -238,7 +238,7 @@ function mxGetActiveCuelists() {
 
 function process_mxGetActiveCuelists(lines,command){
     let start_time = Date.now();
-    console.log('>> QLActive');
+    //console.log('>> QLActive');
     let activeCuelists = [];
     lines.forEach(function each(line) {
         switch (line) {

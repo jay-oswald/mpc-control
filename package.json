@@ -2,8 +2,12 @@
   "name": "MPCTouchpanel",
   "version": "0.0.1",
   "description": "Touchpanel and web bridge for Martin M-PC and MxManager",
+  "scripts": {
+    "start": "nodemon ./server/server"
+  },
   "dependencies": {
     "child_process": "^1.0.2",
+    "nodemon": "^1.18.3",
     "telnet-client": "^0.15.0",
     "vue": "^2.3.4",
     "vue-router": "^2.5.3",
@@ -22,5 +26,5 @@
     "vue-loader": "^7.3.0",
     "vue-html-loader": "^1.0.0"
   },
-  "author": "Charles Garwood"
+  "author": "Jay Oswald"
 }
