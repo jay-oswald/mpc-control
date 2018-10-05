@@ -9,6 +9,9 @@
 	<div class="col-md-2 fader-container">
 		<cue-fader :cue="[1300,1305,1310,1315,1320,1325,1330,1335,1340,1345,1350,1355,1360,1365,1370,1375,1380,1385,1390,1395,1399]" v-bind:activeQueList="$root.activeCuelists" name="Row 3" type="House Lights"></cue-fader>
 	</div>
+	<div class="col-md-2 fader-container">
+		<cue-fader :cue="[1400,1405,1410,1415,1420,1425,1430,1435,1440,1445,1450,1455,1460,1465,1470,1475,1480,1485,1490,1495,1499]" v-bind:activeQueList="$root.activeCuelists" name="Row 4" type="House Lights"></cue-fader>
+	</div>
 
 	<div class="col-md-4">
 		<cue-button :cue="12" name="Pre/Post Service" type="Presets" color="bg-green" icon="fa-star"></cue-button>
