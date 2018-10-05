@@ -1,7 +1,7 @@
 <template>
 <div class="row" v-if="(!lockedOut || manuallyUnlocked)">
 	<div class="col-md-2 fader-container">
-		<cue-fader :cue="[11,12,13,14]" v-bind:activeQueList="$root.activeCuelists" name="Row 1" type="House Lights"></cue-fader>
+		<cue-fader :cue="[1100,1105,1110,1115,1120,1125,1130,1135,1140,1145,1150,1155,1160,1165,1170,1175,1180,1185,1190,1195,1199]" v-bind:activeQueList="$root.activeCuelists" name="Row 1" type="House Lights"></cue-fader>
 	</div>
 	<div class="col-md-4">
 		<cue-button :cue="12" name="Pre/Post Service" type="Presets" color="bg-green" icon="fa-star"></cue-button>
