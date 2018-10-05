@@ -21,6 +21,9 @@
 	<div class="col-md-2 fader-container">
 		<cue-fader :cue="[2200,2205,2210,2215,2220,2225,2230,2235,2240,2245,2250,2255,2260,2265,2270,2275,2280,2285,2290,2295,2299]" v-bind:activeQueList="$root.activeCuelists" name="Extra Wash" type="FOH Lights"></cue-fader>
 	</div>
+	<div class="col-md-2 fader-container">
+		<cue-fader :cue="[2300,2305,2310,2315,2320,2325,2330,2335,2340,2345,2350,2355,2360,2365,2370,2375,2380,2385,2390,2395,2399]" v-bind:activeQueList="$root.activeCuelists" name="Side Colour Wash" type="FOH Lights"></cue-fader>
+	</div>
 
 	<div class="col-md-4">
 		<cue-button :cue="12" name="Pre/Post Service" type="Presets" color="bg-green" icon="fa-star"></cue-button>
